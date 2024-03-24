@@ -1,0 +1,21 @@
+<mat-card [formGroup]="postForm">
+  <div class="inputs">
+    <input
+      mat-input
+      type="text"
+      formControlName="title"
+      placeholder="{{'POST_FORM.TITLE' | transloco}}"
+      class="i-title"
+    />
+
+    <textarea name="desc" rows="5" placeholder="{{'POST_FORM.DESCRIPTION' | transloco}}" formControlName="description"></textarea>
+
+    <input type="text" placeholder="{{'POST_FORM.TAGS' | transloco}}" class="tags" formControlName="tags">
+    <input type="text" placeholder="{{'POST_FORM.COUNTRY' | transloco}}" class="city" formControlName="country">
+  </div>
+
+  <div class="image-button">
+    <input placeholder="image" type="file" class="image-input" formControlName="image">
+    <button mat-button class="medium-button" (click)="createNewPost()" [disabled]="postForm.invalid">{{'POST_FORM.POST' | transloco}}</button>
+  </div>
+</mat-card>

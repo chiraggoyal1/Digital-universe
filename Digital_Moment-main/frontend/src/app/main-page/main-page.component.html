@@ -1,0 +1,71 @@
+<mat-toolbar>
+  <div class="toolbar-item logo-container">
+    <img src="../assets/logo.png" class="logo" alt="logo">
+  </div>
+  <div class="toolbar-item brand">
+    momentum.io
+  </div>
+  <span class="example-spacer"></span>
+  <div style="
+  border: 2px solid white;
+  padding: 8px;
+  border-radius: 10px;
+  " class="toolbar-item" (click)="openLoginDialog()">{{'MAIN_PAGE.COLLABORATE' | transloco}}</div>
+
+  <div class="toolbar-item translate" (click)="toggleLanguage()">{{currentLanguage}}</div>
+</mat-toolbar>
+
+<img style= "height: 400px; width: 400px;
+display: block;
+margin-left:auto;
+margin-right: auto;" src="../assets/world.png" class="banner" alt="main">
+
+<div class="container">
+
+  <div class="main-description section">
+    {{'MAIN_PAGE.DESIGN_TEXT.T1' | transloco}}
+    <div class="big-word">{{'MAIN_PAGE.DESIGN_TEXT.T2' | transloco}}</div>
+    {{'MAIN_PAGE.DESIGN_TEXT.T3' | transloco}}
+    <div class="big-word">{{'MAIN_PAGE.DESIGN_TEXT.T4' | transloco}}</div>
+    {{'MAIN_PAGE.DESIGN_TEXT.T5' | transloco}}
+    <div class="big-word">{{'MAIN_PAGE.DESIGN_TEXT.T6' | transloco}}</div>
+    {{'MAIN_PAGE.DESIGN_TEXT.T7' | transloco}}
+    <div class="big-word">{{'MAIN_PAGE.DESIGN_TEXT.T8' | transloco}}</div>
+
+    <button mat-button (click)="openLoginDialog()">{{'MAIN_PAGE.JOIN_FAMILY' | transloco}}</button>
+  </div>
+
+
+  <h1>{{'MAIN_PAGE.WORLD_GLANCE' | transloco}}</h1>
+  <h4>{{'MAIN_PAGE.DISCOVER' | transloco}}</h4>
+
+  <div class="map section">
+    <map></map>
+  </div>
+
+  <div class="make-impact section">
+    <div class="title subsection-left">{{'MAIN_PAGE.MAKE_IMPACT' | transloco}}</div>
+    <div class="description subsection-right">
+      {{'MAIN_PAGE.MAKE_IMPACT_D1' | transloco}}<br><br>
+      {{'MAIN_PAGE.MAKE_IMPACT_D2' | transloco}}
+    </div>
+  </div>
+
+  <div class="drop-points section">
+    <div class="description subsection-left">{{'MAIN_PAGE.DROP_D' | transloco}}</div>
+    <div class="title subsection-right">
+      <img src="../../assets/tear.png" alt="" class="tear-drop">
+    </div>
+  </div>
+
+
+  <h3>{{'MAIN_PAGE.BRING_CHANGE' | transloco}}</h3>
+
+  <button mat-button (click)="openLoginDialog()">{{'MAIN_PAGE.JOIN_NOW' | transloco}}</button>
+
+  <h4>{{'MAIN_PAGE.MADE_WITH_LOVE' | transloco}}</h4>
+  <br>
+
+</div>
+
+
